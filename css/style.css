@@ -58,11 +58,14 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  text-align: center;
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 60px;
 
   /* If the animation is shaky  or we rotate and don't want to see the back the we should use back face visibility  */
   backface-visibility: hidden;
@@ -125,4 +128,31 @@ body {
   100% {
     transform: translateX(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+
+  /* x y blur  */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
