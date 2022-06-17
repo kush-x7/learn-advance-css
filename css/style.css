@@ -63,6 +63,9 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+
+  /* If the animation is shaky  or we rotate and don't want to see the back the we should use back face visibility  */
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -70,6 +73,18 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
+
+  /* Adding key frame for animation */
+
+  /* animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; */
+
+  /* We can Use these 3 property in single property */
+  animation: moveInLeft 1s ease-out;
+
+  /* animation-delay: 3s; */
+  /* animation: 3;   animation w  */
 }
 
 .heading-primary-sub {
@@ -77,4 +92,37 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.74rem;
+
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: (-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
