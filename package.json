@@ -1,0 +1,14 @@
+{
+  "name": "learn-advance-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kush-x7/learn-advance-css.git",
+  "author": "Kushagra Tripathi <kushagra.tripathi@squareboat.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  }
+}
