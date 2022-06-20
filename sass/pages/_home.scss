@@ -12,4 +12,15 @@
       rgba($color-primary-dark, 0.8)
     ),
     url(../../img/nat-4.jpg);
+
+  //   margin-top: ;
+
+  //   This is alternative od Clip path
+  transform: skewY(-7deg);
+
+  //   It will select the direct child
+  // .section-features > row
+  & > * {
+    transform: skewY(7deg);
+  }
 }
