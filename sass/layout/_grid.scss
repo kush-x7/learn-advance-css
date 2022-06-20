@@ -1,6 +1,6 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
+  // background-color: #eee;
   margin: 0 auto;
 
   //   It will not select the last row
@@ -13,7 +13,7 @@
   //  class^ this means any class starting with the given string
   // class$ this means any class ending with the given string
   [class^='col-'] {
-    background-color: orange;
+    // background-color: orange;
     float: left;
 
     &:not(:last-child) {

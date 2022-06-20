@@ -34,3 +34,41 @@
     animation: moveInRight 1s ease-out;
   }
 }
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+
+  // New Thing
+  // We want our background color to take only only the text part
+  // Making our color background looking like text ;
+
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
